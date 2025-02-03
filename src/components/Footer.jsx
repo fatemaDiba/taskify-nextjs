@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer bg-gray-900 text-white/70 p-10">
+    <div className="  bg-gray-900">
+      <footer className="footer w-11/12 mx-auto text-white/70 py-10">
         <div>
           <h2 className="font-bold text-xl md:text-2xl">Tasiky</h2>
           <p className="w-[70%]">
@@ -11,20 +11,20 @@ const Footer = () => {
         </div>
         <nav>
           <h6 className="font-bold text-lg mb-4 text-white/80">About</h6>
-          <a className="link link-hover">Home</a>
-          <a className="link link-hover">Service</a>
-          <a className="link link-hover">Contact</a>
+          <a className=" link-hover">Home</a>
+          <a className=" link-hover">Service</a>
+          <a className="link-hover">Contact</a>
         </nav>
         <nav>
           <h6 className="font-bold text-lg mb-4 text-white/80">Company</h6>
-          <a className="link link-hover">Why Taskify</a>
-          <a className="link link-hover">About</a>
+          <a className="link-hover">Why Taskify</a>
+          <a className="link-hover">About</a>
         </nav>
         <nav>
           <h6 className="font-bold text-lg mb-4 text-white/80">Support</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <a className="link-hover">Terms of use</a>
+          <a className="link-hover">Privacy policy</a>
+          <a className="link-hover">Cookie policy</a>
         </nav>
       </footer>
     </div>

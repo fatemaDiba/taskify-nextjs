@@ -1,19 +1,29 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
   const navList = (
     <>
-      <Link href={"/"}>
+      <Link href="/" className={`link ${pathname === "/" ? "active" : ""}`}>
         <li>Home</li>
       </Link>
-      <Link href={"/addTask"}>
+      <Link
+        href="/addTask"
+        className={`link ${pathname === "/addTask" ? "active" : ""}`}
+      >
         <li>Add Task</li>
       </Link>
-      <Link href={"/allTasks"}>
+      <Link
+        href="/allTasks"
+        className={`link ${pathname === "/allTasks" ? "active" : ""}`}
+      >
         <li>All Tasks</li>
       </Link>
     </>
   );
+
   return (
     <div className="bg-blue-400">
       <div className="navbar w-11/12 mx-auto py-4">
@@ -37,7 +47,7 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content font-semibold bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm space-y-3 dropdown-content font-semibold bg-base-100 rounded-box z-[1] mt-6 w-36 p-4 shadow"
             >
               {navList}
             </ul>

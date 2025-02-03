@@ -27,7 +27,7 @@ const AllTasks = () => {
 
   return (
     <div className="max-w-5xl mx-auto my-16 px-4">
-      <h2 className="text-xl md:text-3xl font-bold text-center text-gray-800 mb-6">
+      <h2 className="text-xl md:text-2xl xl:text-3xl font-bold text-center text-gray-800 mb-6">
         All Tasks
       </h2>
 
@@ -37,7 +37,7 @@ const AllTasks = () => {
             key={task.id}
             className="bg-white p-5 rounded-2xl shadow-lg border hover:shadow-2xl transition"
           >
-            <h3 className="text-lg font-semibold text-gray-800">
+            <h3 className="text-base md:text-lg font-semibold text-gray-800">
               {task.title}
             </h3>
             <p className="text-sm text-gray-600 mt-1">{task.description}</p>
