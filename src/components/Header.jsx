@@ -6,8 +6,12 @@ const Header = () => {
       <Link href={"/"}>
         <li>Home</li>
       </Link>
-      <li>Add Task</li>
-      <li>Contact</li>
+      <Link href={"/addTask"}>
+        <li>Add Task</li>
+      </Link>
+      <Link href={"/allTasks"}>
+        <li>All Tasks</li>
+      </Link>
     </>
   );
   return (
